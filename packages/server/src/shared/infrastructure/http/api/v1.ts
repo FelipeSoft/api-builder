@@ -1,8 +1,8 @@
+import userRoutes from "@modules/user/infrastructure/http/routes/userRoutes";
 import { Router } from "express";
-import userRoutes from "../../../../modules/user/infrastructure/http/routes/userRoutes";
 
-const v1 = Router();
+const routes = Router();
 
-v1.use("/api/v1", userRoutes);
+routes.use("/api/v1", userRoutes);
 
-export default v1;
+export default routes;

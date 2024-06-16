@@ -4,6 +4,7 @@ export type UserAttributes = {
     name: string;
     email: string;
     password: string;
+    plan: "standard" | "pro";
 }
 
 export type UserDocument = Document & UserAttributes;
@@ -12,11 +13,6 @@ type UserModel = Model<UserDocument>;
 
 const UserSchema = new Schema(
     {
-        name: {
-            type: String,
-            trim: true,
-            required: true
-        },
         email: {
             type: String,
             lowercase: true,
@@ -27,6 +23,10 @@ const UserSchema = new Schema(
         password: {
             type: String,
             required: true,
+        },
+        license: {
+            type: String,
+            required: false
         }
     },
     {
