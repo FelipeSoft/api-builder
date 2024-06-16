@@ -1,0 +1,21 @@
+{
+  "name": "my-express-app",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/shared/index.js",
+    "dev": "ts-node-dev --respawn src/shared/index.ts"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.0.0",
+    "ts-node": "^10.2.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^4.4.3"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.17.1"
+  }
+}
