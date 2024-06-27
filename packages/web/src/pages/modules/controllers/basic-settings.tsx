@@ -129,50 +129,48 @@ export const BasicSettings = () => {
                 <div className="w-1/2">Another content here.</div>
             </div>
             <Table>
-                <Table>
-                    <TableCaption className="text-center">This list will be added to a router.</TableCaption>
-                    <TableHeader>
-                        <TableRow>
-                            <TableHead className="w-[50px]">Name</TableHead>
-                            <TableHead>Belongs to Entity</TableHead>
-                            <TableHead>Router</TableHead>
-                            <TableHead className="text-right"></TableHead>
-                        </TableRow>
-                    </TableHeader>
-                    <TableBody>
-                        {controllers.map((controller: Controller) => {
-                            return (
-                                <TableRow>
-                                    <TableCell className="font-medium">{controller.name}</TableCell>
-                                    <TableCell>{controller.entity}</TableCell>
-                                    <TableCell>{controller.router}</TableCell>
-                                    <TableCell className="text-right flex items-center justify-end gap-4">
-                                        <TooltipProvider>
-                                            <Tooltip>
-                                                <TooltipTrigger asChild>
-                                                    <Button variant={"ghost"} size={"icon"}><Edit /></Button>
-                                                </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p>Edit Endpoint</p>
-                                                </TooltipContent>
-                                            </Tooltip>
-                                        </TooltipProvider>
-                                        <TooltipProvider>
-                                            <Tooltip>
-                                                <TooltipTrigger asChild>
-                                                    <Button variant={"destructive"} size={"icon"}><Trash /></Button>
-                                                </TooltipTrigger>
-                                                <TooltipContent>
-                                                    <p>Delete Endpoint</p>
-                                                </TooltipContent>
-                                            </Tooltip>
-                                        </TooltipProvider>
-                                    </TableCell>
-                                </TableRow>
-                            )
-                        })}
-                    </TableBody>
-                </Table>
+                <TableCaption className="text-center">This list will be added to a router.</TableCaption>
+                <TableHeader>
+                    <TableRow>
+                        <TableHead className="w-[50px]">Name</TableHead>
+                        <TableHead>Belongs to Entity</TableHead>
+                        <TableHead>Router</TableHead>
+                        <TableHead className="text-right"></TableHead>
+                    </TableRow>
+                </TableHeader>
+                <TableBody>
+                    {controllers.map((controller: Controller) => {
+                        return (
+                            <TableRow>
+                                <TableCell className="font-medium">{controller.name}</TableCell>
+                                <TableCell>{controller.entity}</TableCell>
+                                <TableCell>{controller.router}</TableCell>
+                                <TableCell className="text-right flex items-center justify-end gap-4">
+                                    <TooltipProvider>
+                                        <Tooltip>
+                                            <TooltipTrigger asChild>
+                                                <Button variant={"ghost"} size={"icon"}><Edit /></Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Edit Endpoint</p>
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    </TooltipProvider>
+                                    <TooltipProvider>
+                                        <Tooltip>
+                                            <TooltipTrigger asChild>
+                                                <Button variant={"destructive"} size={"icon"}><Trash /></Button>
+                                            </TooltipTrigger>
+                                            <TooltipContent>
+                                                <p>Delete Endpoint</p>
+                                            </TooltipContent>
+                                        </Tooltip>
+                                    </TooltipProvider>
+                                </TableCell>
+                            </TableRow>
+                        )
+                    })}
+                </TableBody>
             </Table>
         </div>
     )

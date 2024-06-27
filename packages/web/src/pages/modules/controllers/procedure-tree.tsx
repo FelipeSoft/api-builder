@@ -82,13 +82,12 @@ export const ProcedureTree = () => {
                         </Form>
                         <Alert>
                             <Info className="h-4 w-4" />
-                            <AlertTitle>Tips</AlertTitle>
+                            <AlertTitle>Info</AlertTitle>
                             <AlertDescription>
-                                When building your controller's actions, think that you are a waiter: you receive the clients requests, and you use the kitchen as your environment available to return the ready order.
-                            </AlertDescription>
+                                In our controllers we use the Active Record design pattern, which in Software Architecture is the action of integrating business rules together with data persistence in a single object.                            </AlertDescription>
                         </Alert>
                     </div>
-                    <div className="rounded-md border dark:border-neutral-800 p-4 mt-8">
+                    <div className="rounded-md border dark:border-neutral-700 p-4 mt-8">
                         <div className="flex justify-between w-full">
                             <div className="flex items-center gap-2">
                                 <h3>

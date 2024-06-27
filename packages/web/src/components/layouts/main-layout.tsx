@@ -25,11 +25,11 @@ type Props = {
 }
 
 const MainLayout = ({ children }: Props) => {
-    const { setTheme } = useTheme()
+    const { setTheme } = useTheme();
 
     return (
         <main className="min-h-screen bg-white dark:bg-neutral-900">
-            <header className="z-20 fixed top-0 w-full bg-white dark:bg-neutral-900 dark:border-neutral-800 border-b border-b-neutral-300 h-12 px-4">
+            <header className="z-20 fixed top-0 w-full bg-white dark:bg-neutral-900 dark:border-neutral-700 border-b border-b-neutral-300 h-12 px-4">
                 <nav className="max-w-7xl mx-auto h-full flex items-center justify-between">
                     <ul className="flex items-center gap-4">
                         <li><Link href="/" className="dark:hover:bg-neutral-800 hover:bg-neutral-100 h-full py-1 px-2 rounded-md">Home</Link></li>

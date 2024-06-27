@@ -119,7 +119,7 @@ const Index = () => {
                 </Dialog>
             </div>
             <nav className="flex flex-col gap-4 mt-10">
-                <Link href="/project/1" className="dark:hover:bg-neutral-800 hover:bg-neutral-100 transition-all py-4 dark:hover:px-4 hover:px-4 border-b dark:border-neutral-800 border-neutral-300">
+                <Link href="/modules/overview?id=1" className="dark:hover:bg-neutral-800 hover:bg-neutral-100 transition-all py-4 dark:hover:px-4 hover:px-4 border-b dark:border-neutral-700 border-neutral-300">
                     <h2>REST API Example</h2>
                     <p className="text-sm text-neutral-500">This is an example module of a REST API built with RapidREST.</p>
                 </Link>
