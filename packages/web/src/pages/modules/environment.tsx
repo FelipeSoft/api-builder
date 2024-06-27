@@ -51,7 +51,7 @@ const Environment = () => {
             <ModuleLayout currentTab={2} titleTab="Envinronment">
                 <section className="w-full">
                     <div className="mt-8 mb-4">
-                        <h2 className="text-neutral-500 font-semibold flex items-center gap-2">Variables</h2>
+                        <h2 className="dark:text-neutral-400 text-neutral-600 font-semibold flex items-center gap-2">Variables</h2>
                         <p className="text-sm text-neutral-500">You can create your personals environment variables, with a key and a value.</p>
                     </div>
                     <Form {...form}>

@@ -88,7 +88,7 @@ const Routes = () => {
         <MainLayout >
             <ModuleLayout currentTab={3} titleTab="Routes">
                 <div className="mt-8 mb-4">
-                    <h2 className="text-neutral-500 font-semibold flex items-center gap-2">Enpoints and Routers</h2>
+                    <h2 className="dark:text-neutral-400 text-neutral-600 font-semibold flex items-center gap-2">Enpoints and Routers</h2>
                     <p className="text-sm text-neutral-500">Generally speaking, endpoints are the possible accessible paths of your RESTful API, while routers are the sets of endpoints.</p>
                 </div>
                 <section className="w-full">
